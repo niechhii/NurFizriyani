@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Fizri's Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#E0E6FF',
+                        'card-bg': '#D7CFF0',
+                        'nav-active': '#5D3FD3',
+                        'text-dark': '#2C3E50',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body class="font-sans text-text-dark bg-primary-bg">
+
+    <header class="sticky top-0 z-10 bg-primary-bg/90 shadow-lg backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-text-dark whitespace-nowrap overflow-hidden text-ellipsis">
+                Personal Page, I'm Fizri
+            </h1>
+            <nav>
+                <ul class="flex space-x-2 md:space-x-8 text-text-dark">
+                    <li><a href="Homepage.html" class="px-3 py-1 rounded-full bg-nav-active text-white shadow-lg transition duration-300">Home</a></li>
+                    <li><a href="MyBiodata.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Biodata</a></li>
+                    <li><a href="MyPortfolio.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Portfolio</a></li>
+                    <li><a href="MyVideo.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Video</a></li>
+                    <li><a href="YourComments.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Comment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-8 px-4">
+        <div class="page-content active">
+            <section class="bg-card-bg p-8 md:p-12 rounded-3xl shadow-2xl transition duration-500 max-w-4xl mx-auto">
+                <div class="md:flex md:space-x-8 items-center">
+                    <!-- Profile Card/Image (Left) -->
+                    <div class="flex-shrink-0 mb-6 md:mb-0 w-full md:w-1/3 flex justify-center">
+                        <div class="bg-white p-4 rounded-3xl shadow-xl w-48 h-48 sm:w-60 sm:h-60 flex items-center justify-center">
+                            <img src="https://placehold.co/180x180/D7CFF0/5D3FD3?text=Fizri" alt="Fizri Avatar" class="rounded-full w-full h-full object-cover">
+                        </div>
+                    </div>
+                    
+                    <!-- Introduction Text (Right) -->
+                    <div class="md:w-2/3">
+                        <h2 class="text-3xl font-bold mb-4">Hi, I'm Fizri</h2>
+                        <p class="mb-4 text-lg font-semibold">
+                            This is my "Personal Page Development", an Individual Assignment for subject Multimedia Web Programming IM22503.
+                        </p>
+                        <p class="mb-6">
+                            This personal webpage serves as a digital portfolio or personal showcase, demonstrating my skills, interests, achievements, and a brief personal introduction. This assignment will enable myself to practice basic web design, multimedia integration, and responsive design skills, creating a webpage that can serve as a professional online presence.
+                        </p>
+                        
+                        <a href="MyBiodata.html" class="inline-flex items-center text-nav-active font-semibold hover:underline transition duration-300 mt-4">
+                            Click here to visit my biodata. 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Skills & Interests -->
+                <div class="mt-10 pt-6 border-t border-card-bg/50">
+                    <h3 class="text-xl font-bold mb-3 text-nav-active">Key Skills & Interests</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-semibold mb-2">Key Skills</h4>
+                            <ul class="list-disc pl-5 text-sm space-y-1">
+                                <li>HTML Structure and Tags</li>
+                                <li>CSS Styling and Layout</li>
+                                <li>JavaScript Interactivity</li>
+                                <li>Multimedia Integration (Image, Video)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="semi-bold">Interests</h4>
+                            <ol class="list-decimal pl-5 text-sm space-y-1">
+                                <li>Web Design</li>
+                                <li>Video Editing</li>
+                                <li>Motion Graphics</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

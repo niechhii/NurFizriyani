@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Comments - Fizri's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#E0E6FF',
+                        'card-bg': '#D7CFF0',
+                        'nav-active': '#5D3FD3',
+                        'text-dark': '#2C3E50',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <style type="text/css">
+    body,td,th {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+    </style>
+<script type="module">
+        import { submitComment } from './main.js';
+        window.submitComment = submitComment;
+    </script>
+</head>
+<body class="font-sans text-text-dark bg-primary-bg">
+    <header class="sticky top-0 z-10 bg-primary-bg/90 shadow-lg backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+          <h1 class="text-xl md:text-2xl font-bold text-text-dark whitespace-nowrap overflow-hidden text-ellipsis">
+                Share Your Feedback
+            </h1>
+          <nav>
+                <ul class="flex space-x-2 md:space-x-8 text-text-dark">
+                    <li><a href="Homepage.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Home</a></li>
+                    <li><a href="MyBiodata.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Biodata</a></li>
+                    <li><a href="MyPortfolio.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Portfolio</a></li>
+                    <li><a href="MyVideo.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Video</a></li>
+                    <li><a href="YourComments.html" class="px-3 py-1 rounded-full bg-nav-active text-white shadow-lg transition duration-300">Comment</a></li>
+                </ul>
+          </nav>
+        </div>
+    </header>
+
+    <main class="max-w-xl mx-auto py-8 px-4">
+        <div class="space-y-8">
+            <!-- Comment Submission Form -->
+            <section class="bg-card-bg p-8 rounded-3xl shadow-2xl">
+                <h2 class="text-3xl font-bold mb-4 text-center text-nav-active">Leave a Comment</h2>
+                <p class="text-center mb-6">Please share your comments and feedback below. Your input helps enhance the professionalism of this webpage.</p>
+                
+                <form onsubmit="submitComment(event)" class="space-y-4">
+                    <label for="name" class="block font-semibold">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g., Jane Doe" required class="w-full p-3 rounded-lg border-2 border-card-bg/80 focus:border-nav-active focus:ring-nav-active transition duration-200">
+
+                    <label for="comment" class="block font-semibold pt-4">Your Comment</label>
+                    <textarea id="comment" name="comment" rows="5" placeholder="This portfolio is fantastic!" required class="w-full p-3 rounded-lg border-2 border-card-bg/80 focus:border-nav-active focus:ring-nav-active transition duration-200"></textarea>
+
+                    <button type="submit" class="w-full md:w-auto inline-flex items-center justify-center px-6 py-3 bg-nav-active text-white font-semibold rounded-full shadow-lg hover:bg-nav-active/90 transition duration-300 mt-4">
+                        Submit Feedback 
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </button>
+                    <p id="comment-status" class="text-sm pt-2 text-center text-nav-active font-medium"></p>
+                </form>
+            </section>
+            
+          <section class="bg-card-bg p-8 rounded-3xl shadow-2xl">
+                <h2 class="text-2xl font-bold mb-6 text-center text-nav-active">Recent Comments</h2>
+                <div id="recent-comments-list" class="space-y-4">
+                    <p class="text-center text-text-dark/70 italic">Loading comments from Firestore...</p>
+                </div>
+            <div class="mt-6 pt-4 border-t border-card-bg/50">
+                    <h4 class="text-lg font-bold mb-2 text-nav-active">Social Media Links</h4>
+                    <ul class="list-disc pl-5">
+                        <li><a href="www.linkedin.com/in/fizriyani-basri-1873o3781" target="_blank" class="text-nav-active hover:underline">LinkedIn Profile</a></li>
+                        <li><a href="" target="_blank" class="text-nav-active hover:underline">GitHub</a></li>
+                    </ul>
+              </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

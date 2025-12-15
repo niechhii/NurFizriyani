@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biodata - Fizri's Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#E0E6FF',
+                        'card-bg': '#D7CFF0',
+                        'nav-active': '#5D3FD3',
+                        'text-dark': '#2C3E50',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body class="font-sans text-text-dark bg-primary-bg">
+    <header class="sticky top-0 z-10 bg-primary-bg/90 shadow-lg backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-text-dark whitespace-nowrap overflow-hidden text-ellipsis">
+                About Fizri
+            </h1>
+            <nav>
+                <ul class="flex space-x-2 md:space-x-8 text-text-dark">
+                    <li><a href="Homepage.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Home</a></li>
+                    <li><a href="MyBiodata.html" class="px-3 py-1 rounded-full bg-nav-active text-white shadow-lg transition duration-300">Biodata</a></li>
+                    <li><a href="MyPortfolio.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Portfolio</a></li>
+                    <li><a href="MyVideo.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Video</a></li>
+                    <li><a href="YourComments.html" class="px-3 py-1 rounded-full hover:bg-nav-active/50 transition duration-300">Comment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div>
+                <div class="bg-card-bg p-6 rounded-3xl shadow-xl w-full sticky top-20">
+                    <h2 class="text-3xl font-bold text-center mb-4 text-nav-active">About NUR FIZRIYANI</h2>
+					<img src="image/me.jpg" alt="Profile Image Placeholder" class="w-50 h-50- mx-auto rounded-full object-cover mb-4 shadow-lg border-4 border-nav-active/20">
+                    <div>
+                        <p class="flex items-center font-medium">Matric No: BI23110174</p>
+                        <p class="flex items-center font-medium">Email: NURFIZRIYA_BI2311@iluv.ums.edu.my</p>
+                        <p class="flex items-center font-medium">Location: W.P Labuan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-2 space-y-8">
+                <section class="bg-card-bg p-6 rounded-3xl shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4 text-nav-active">Personal Summary & Education</h3>
+                    <p class="mb-4">
+                        NUR FIZRIYANI BINTI BASRI is a dedicated student currently pursuing studies at University Malaysia Sabah Labuan International Campus, specializing in Multimedia Technology in IT. Her studies are driven by a deep-seated passion for visual arts, making her an emerging talent in the intersection of technology and creativity.
+                    </p>
+                    <p class="mb-4">
+                        She is committed to mastering front-end web development using HTML, CSS, and JavaScript.
+                    </p>
+                </section>
+ 
+                <section class="bg-card-bg p-6 rounded-3xl shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4 text-nav-active">Technical Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white text-nav-active px-3 py-1 rounded-full text-sm font-medium shadow-md">Adobe After Effects</span>
+                        <span class="bg-white text-nav-active px-3 py-1 rounded-full text-sm font-medium shadow-md">Adobe Animate</span>
+                        <span class="bg-white text-nav-active px-3 py-1 rounded-full text-sm font-medium shadow-md">Adobe Photoshop</span>
+                        <span class="bg-white text-nav-active px-3 py-1 rounded-full text-sm font-medium shadow-md">Blender (3D)</span>
+                        <span class="bg-white text-nav-active px-3 py-1 rounded-full text-sm font-medium shadow-md">HTML5 & CSS3</span>
+                        <span class="bg-white text-nav-active px-3 py-1 rounded-full text-sm font-medium shadow-md">JavaScript</span>
+                        <span class="bg-white text-nav-active px-3 py-1 rounded-full text-sm font-medium shadow-md">Python</span>
+                        <span class="bg-white text-nav-active px-3 py-1 rounded-full text-sm font-medium shadow-md">MySQL</span>
+                    </div>
+                </section>
+
+                <section class="bg-card-bg p-6 rounded-3xl shadow-xl overflow-x-auto class-schedule">
+                    <h3 class="text-2xl font-bold mb-4 text-nav-active">Current Semester Timetable</h3>
+                    <table class="min-w-full bg-white rounded-xl overflow-hidden shadow-inner">
+                        <thead class="bg-nav-active text-white">
+                            <tr>
+                                <th class="py-3 px-4 uppercase font-semibold text-sm">Day</th>
+                                <th class="py-3 px-4 uppercase font-semibold text-sm">Time</th>
+                                <th class="py-3 px-4 uppercase font-semibold text-sm">Course/Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-text-dark">
+                            <tr>
+                                <td class="py-3 px-4 font-semibold">Monday</td>
+                                <td class="py-3 px-4">10.00 AM</td>
+                                <td class="py-3 px-4">Artificial Intelligence</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-semibold">Tuesday</td>
+                                <td class="py-3 px-4">8.00 AM</td>
+                                <td class="py-3 px-4">Computer Graphic</td>
+                            </tr>
+							<tr>
+                                <td class="py-3 px-4 font-semibold"> </td>
+                                <td class="py-3 px-4">2.00 PM</td>
+                                <td class="py-3 px-4">Cyber Security</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Wednesday</td>
+                                <td class="py-3 px-4">8.00 AM</td>
+                                <td class="py-3 px-4">Augmented Reality</td>
+                            </tr>
+							<tr>
+                                <td class="font-semibold"> </td>
+                                <td class="py-3 px-4">9.00 AM</td>
+                                <td class="py-3 px-4">Multimedia Web Programming</td>
+                            </tr>
+							<tr>
+                                <td class="font-semibold"> </td>
+                                <td class="py-3 px-4">2.00 PM</td>
+                                <td class="py-3 px-4">Augmented Reality</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
