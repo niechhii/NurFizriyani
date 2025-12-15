@@ -59,55 +59,31 @@
                     <h3 class="text-xl font-bold mb-4 text-nav-active hidden md:block">Filter Projects</h3>
                     
                     <div class="flex flex-wrap md:flex-col md:space-y-2 md:space-x-0 justify-center md:justify-start">
-                        <button class="filter-button active w-full md:w-auto md:text-left" onclick="filterProjects('all', this)">All Projects</button>
-                        <button class="filter-button w-full md:w-auto md:text-left" onclick="filterProjects('webdev', this)">Web Dev</button>
-                        <button class="filter-button w-full md:w-auto md:text-left" onclick="filterProjects('animation', this)">3D Animation</button>
-                        <button class="filter-button w-full md:w-auto md:text-left" onclick="filterProjects('video', this)">Video Production</button>
-                        <button class="filter-button w-full md:w-auto md:text-left" onclick="filterProjects('graphic', this)">Graphic Design</button>
+                        <button class="filter-button" onclick="filterProjects('all', this)">All Projects</button>
+                        <button class="filter-button" onclick="filterProjects('animation', this)">3D Animation</button>
+                        <button class="filter-button" onclick="filterProjects('video', this)">Video Production</button>
                     </div>
                 </div>
 
                 <!-- Project Grid (Right Columns) -->
                 <div id="project-grid-container" class="md:col-span-3">
                     <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        
-                        <!-- Project 1: AI Chatbot System (Web Dev) -->
-                        <div class="project-card" data-filter-type='webdev'>
-                            <div class="bg-card-bg/80 p-5 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
-                                <img src="https://placehold.co/400x250/5D3FD3/D7CFF0?text=AI+Chatbot+System" alt="AI Chatbot System screenshot" class="rounded-lg mb-4 w-full h-40 object-cover">
-                                <h3 class="text-xl font-bold mb-2 text-nav-active">AI Chatbot System</h3>
-                                <p class="text-sm mb-4">During my foundation study, I created a project integrating AI to create an intelligent chatbot interface for student assistance. (Web Development Project)</p>
-                                <a href="#" class="text-nav-active font-semibold hover:underline">View Project →</a>
-                            </div>
-                        </div>
-                        
-                        <!-- Project 2: Ice Cream Commercial (Animation, Video) -->
-                        <div class="project-card" data-filter-type='animation video'>
-                            <div class="bg-card-bg/80 p-5 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
-                                <img src="https://placehold.co/400x250/D7CFF0/5D3FD3?text=Ice+Cream+Commercial" alt="Ice Cream Commercial screenshot" class="rounded-lg mb-4 w-full h-40 object-cover">
-                                <h3 class="text-xl font-bold mb-2 text-nav-active">Ice Cream Commercial</h3>
-                                <p class="text-sm mb-4">A three person group project creating a 3D animated advertisement for an ice cream brand using Blender.</p>
-                                <a href="#" class="text-nav-active font-semibold hover:underline">Watch Video →</a>
+						
+                        <!-- Project 1 (Animation, Video) -->
+                        <div class="project-card" data-filter-type='animation'>
+                            <div class="bg-card-bg/80 p-5 rounded-2xl shadow-lg hover:shadow-xl transition duration-300"> <a href="https://youtu.be/a8d18Bq9X74?si=1MA6Dyisvcx5aweM" target="_blank"><img src="animationVid.png"></a>
+                                <h3 class="text-xl font-bold mb-2 text-nav-active">Toothpaste Commercial</h3>
+                                <p class="text-sm mb-4">A two person group project creating a 3D animated advertisement for an toothpaste brand using Blender.</p>
+                                <a href="https://youtu.be/a8d18Bq9X74?si=1MA6Dyisvcx5aweM" target="_blank" class="text-nav-active font-semibold hover:underline">Watch Video →</a>
                             </div>
                         </div>
 
-                        <!-- Project 3: Responsive Layout Design (from original MyPortfolio.html) -->
-                        <div class="project-card" data-filter-type='webdev'>
-                            <div class="bg-card-bg/80 p-5 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
-                                <img src="https://placehold.co/400x250/5D3FD3/D7CFF0?text=Responsive+Design" alt="Responsive Layout Design" class="rounded-lg mb-4 w-full h-40 object-cover">
-                                <h3 class="text-xl font-bold mb-2 text-nav-active">Responsive Layout Design</h3>
-                                <p class="text-sm mb-4">A static website built using HTML and CSS, focusing heavily on responsive design techniques for usability across devices [2], [15].</p>
-                                <a href="#" target="_blank" class="text-nav-active font-semibold hover:underline">View Project Link →</a> 
-                            </div>
-                        </div>
-
-                        <!-- Project 4: Interactive Data Visualization (from original MyPortfolio.html) -->
-                        <div class="project-card" data-filter-type='webdev'>
-                            <div class="bg-card-bg/80 p-5 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
-                                <img src="https://placehold.co/400x250/D7CFF0/5D3FD3?text=Data+Visualization" alt="Interactive Data Visualization" class="rounded-lg mb-4 w-full h-40 object-cover">
-                                <h3 class="text-xl font-bold mb-2 text-nav-active">Interactive Data Visualization</h3>
-                                <p class="text-sm mb-4">An assignment focusing on client-side interactivity using JavaScript to load and display dynamic content [17].</p>
-                                <a href="#" class="text-nav-active font-semibold hover:underline">View Project →</a>
+                        <!-- Project 2 video production -->
+                        <div class="project-card" data-filter-type='video'>
+                            <div class="bg-card-bg/80 p-5 rounded-2xl shadow-lg hover:shadow-xl transition duration-300"> <a href="https://youtu.be/kwIi8lV33iY?si=4iD0LLwMTUkBgobs" target="_blank"><img src="vidpro.png"></a>
+                                <h3 class="text-xl font-bold mb-2 text-nav-active">Portfolio Video Production</h3>
+                                <p class="text-sm mb-4">An assignment focusing on making a Portfolio in a form of video.</p>
+                                <a href="https://youtu.be/kwIi8lV33iY?si=4iD0LLwMTUkBgobs" target="_blank" class="text-nav-active font-semibold hover:underline">Watch video →</a>
                             </div>
                         </div>
                     </div>
