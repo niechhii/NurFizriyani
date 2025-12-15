@@ -1,8 +1,7 @@
 
-/* General Body and Page Transitions */
 body {
-    background-color: #E0E6FF; /* primary-bg */
-    color: #2C3E50; /* text-dark */
+    background-color: #E0E6FF; 
+    color: #2C3E50;
     min-height: 100vh;
 }
 .page-content {
@@ -16,29 +15,27 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Filter Button Styling (Portfolio) */
 .filter-button {
     padding: 8px 16px;
     margin: 4px;
-    border-radius: 9999px; /* full rounded */
+    border-radius: 9999px;
     font-weight: 500;
     transition: all 0.3s ease;
     cursor: pointer;
-    border: 1px solid #5D3FD3; /* nav-active */
+    border: 1px solid #5D3FD3; 
     color: #5D3FD3;
     background-color: transparent;
 }
 .filter-button:hover {
-    background-color: #5D3FD3; /* nav-active */
+    background-color: #5D3FD3;
     color: white;
 }
 .filter-button.active {
-    background-color: #5D3FD3; /* nav-active */
+    background-color: #5D3FD3;
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Utility classes matching the color definitions */
 .bg-nav-active {
     background-color: #5D3FD3; 
 }
@@ -52,7 +49,6 @@ body {
     color: #2C3E50;
 }
 
-/* Responsive table cell styling for smaller screens */
 @media (max-width: 768px) {
     .class-schedule table th, .class-schedule table td {
         padding: 8px 10px;
@@ -60,35 +56,28 @@ body {
     }
 }
 
-/* --- START OF FLIP CARD STYLES (Added to existing styles.css) --- */
 .flip-container {
-    /* Let parent Tailwind classes define the size */
     width: 100%;
     height: 100%;
-    /* Key 3D property */
     perspective: 1000px; 
 }
 
-/* The actual card element that rotates */
 .flipper {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s; /* Smooth flip animation */
-    transform-style: preserve-3d; /* Key to making the 3D rotation work */
+    transition: transform 0.8s; 
+    transform-style: preserve-3d; 
 }
 
-/* Trigger the flip on hover */
 .flip-container:hover .flipper {
     transform: rotateY(180deg);
 }
 
-/* Front and Back Faces */
 .front, .back {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* Hide the back side initially */
     backface-visibility: hidden;
     border-radius: 1.5rem; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -100,18 +89,16 @@ body {
     text-align: center;
 }
 
-/* Styling for the Front Face (Initial View) */
 .front {
-    background-color: #D7CFF0; /* Using card-bg directly */
+    background-color: #D7CFF0; 
     z-index: 2;
     transform: rotateY(0deg);
 }
 
-/* Styling for the Back Face (Flipped View) */
 .back {
-    background-color: #5D3FD3; /* Using nav-active directly */
+    background-color: #5D3FD3; 
     color: white;
-    transform: rotateY(180deg); /* Start rotated 180 degrees */
+    transform: rotateY(180deg);
 }
 
 /* Image Styling */
@@ -134,4 +121,3 @@ body {
     align-items: center;
     justify-content: center;
 }
-/* --- END OF FLIP CARD STYLES --- */
