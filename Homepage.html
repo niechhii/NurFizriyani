@@ -48,10 +48,25 @@
         <div class="page-content active">
             <section class="bg-card-bg p-8 md:p-12 rounded-3xl shadow-2xl transition duration-500 max-w-4xl mx-auto">
                 <div class="md:flex md:space-x-8 items-center">
+					
                     <!-- Profile Card/Image (Left) -->
                     <div class="flex-shrink-0 mb-6 md:mb-0 w-full md:w-1/3 flex justify-center">
-                        <div class="bg-white p-4 rounded-3xl shadow-xl w-48 h-48 sm:w-60 sm:h-60 flex items-center justify-center">
-                            <img src="https://placehold.co/180x180/D7CFF0/5D3FD3?text=Fizri" alt="Fizri Avatar" class="rounded-full w-full h-full object-cover">
+                        <div class="flip-container w-48 h-48 sm:w-60 sm:h-60">
+                            <div class="flipper">
+                                <!-- Front Face: Profile Picture -->
+                                <div class="front">
+                                    <div class="front-content">
+                                        <img src="image/me.jpg" alt="Profile Picture Front" class="card-image">
+                                    </div>
+                                    <p style="position: absolute; bottom: 5px; font-size: 0.8rem; color: #2C3E50; opacity: 0.8;">Hover to Flip!</p>
+                                </div>
+                                <!-- Back Face: Alternative Image / Info -->
+                                <div class="back">
+                                    <div class="front-content" style="background-color: transparent;">
+                                        <img src="image/informal.jpeg" alt="Alternative Image" class="card-image" style="border: 5px solid white;">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
@@ -79,18 +94,18 @@
                         <div>
                             <h4 class="font-semibold mb-2">Key Skills</h4>
                             <ul class="list-disc pl-5 text-sm space-y-1">
-                                <li>HTML Structure and Tags</li>
-                                <li>CSS Styling and Layout</li>
-                                <li>JavaScript Interactivity</li>
-                                <li>Multimedia Integration (Image, Video)</li>
+                                <li>3D Animation</li>
+                                <li>Video Production</li>
+                                <li>Web Design</li>
+                                <li>Photoshoot and Pre-Production</li>
                             </ul>
                         </div>
                         <div>
                             <h4 class="semi-bold">Interests</h4>
                             <ol class="list-decimal pl-5 text-sm space-y-1">
-                                <li>Web Design</li>
-                                <li>Video Editing</li>
-                                <li>Motion Graphics</li>
+                                <li>Animation</li>
+                                <li>Video Production</li>
+                                <li>Filming</li>
                             </ol>
                         </div>
                     </div>
