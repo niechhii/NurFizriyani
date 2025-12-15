@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage - Fizri's Portfolio</title>
-    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,7 +22,7 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles.css" /> 
 </head>
 <body class="font-sans text-text-dark bg-primary-bg">
 
@@ -48,29 +47,25 @@
         <div class="page-content active">
             <section class="bg-card-bg p-8 md:p-12 rounded-3xl shadow-2xl transition duration-500 max-w-4xl mx-auto">
                 <div class="md:flex md:space-x-8 items-center">
-					
-                    <!-- Profile Card/Image (Left) -->
+                    
                     <div class="flex-shrink-0 mb-6 md:mb-0 w-full md:w-1/3 flex justify-center">
                         <div class="flip-container w-48 h-48 sm:w-60 sm:h-60">
                             <div class="flipper">
-                                <!-- Front Face: Profile Picture -->
                                 <div class="front">
                                     <div class="front-content">
                                         <img src="me.jpg" alt="Profile Picture Front" class="card-image">
                                     </div>
                                     <p style="position: absolute; bottom: 5px; font-size: 0.8rem; color: #2C3E50; opacity: 0.8;">Hover to Flip!</p>
                                 </div>
-                                <!-- Back Face: Alternative Image / Info -->
                                 <div class="back">
                                     <div class="front-content" style="background-color: transparent;">
-                                        <img src="informal.jpeg" alt="Alternative Image" class="card-image">
+                                        <img src="informal.jpeg" alt="Alternative Image" class="card-image" style="border: 5px solid white;">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Introduction Text (Right) -->
                     <div class="md:w-2/3">
                         <h2 class="text-3xl font-bold mb-4">Hi, I'm Fizri</h2>
                         <p class="mb-4 text-lg font-semibold">
@@ -87,7 +82,6 @@
                     </div>
                 </div>
 
-                <!-- Skills & Interests -->
                 <div class="mt-10 pt-6 border-t border-card-bg/50">
                     <h3 class="text-xl font-bold mb-3 text-nav-active">Key Skills & Interests</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
